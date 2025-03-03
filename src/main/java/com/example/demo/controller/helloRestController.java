@@ -22,6 +22,11 @@ public class helloRestController {
 	public String sayHelloPathVariable(@PathVariable String name){
 		return "Hello " + name+" from Bridgelabz";
 	}
+
+	@PostMapping("/post")
+	public String sayHelloPost(@RequestBody User user){
+		return "Hello " + user.getFirstName()+" "+user.getLastName()+" from Bridgelabz";
+	}
 }
 
 
