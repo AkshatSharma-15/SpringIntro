@@ -13,6 +13,10 @@ public class helloRestController {
 		return "Hello from BridgeLabz !!!";
 	}
 
+	@GetMapping("/query")
+	public String sayHello(@RequestParam String name){
+		return "Hello " + name+" from Bridgelabcz";
+	}
 }
 
 
