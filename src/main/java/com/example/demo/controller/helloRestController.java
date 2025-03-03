@@ -17,6 +17,11 @@ public class helloRestController {
 	public String sayHello(@RequestParam String name){
 		return "Hello " + name+" from Bridgelabcz";
 	}
+
+	@GetMapping("/params/{name}")
+	public String sayHelloPathVariable(@PathVariable String name){
+		return "Hello " + name+" from Bridgelabz";
+	}
 }
 
 
